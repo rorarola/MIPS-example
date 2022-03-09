@@ -5,7 +5,7 @@ assume 	g in $s1
 		base address of A in $s3
 ```
 lw $t0, 32($s3)		# load word, $t0 = A[8]
-					# a word is 4 bytes, index 8 requires offest of 8*4=32
+			# a word is 4 bytes, index 8 requires offest of 8*4=32
 add $s1, $s2, $t0
 ```
 > offset must be a constant
