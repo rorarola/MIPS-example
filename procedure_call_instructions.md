@@ -4,9 +4,9 @@
 int ans = leaf_example(a, b, c, d)
 ```
 
-step 1: 複製變數到arguments($a0, $a1...)
-step 2: 跳到procedure(function)
-step 3: 將結果($v0, $v1..))存到ans
+step 1: 複製變數到arguments($a0, $a1...)</br>
+step 2: 跳到procedure(function)</br>
+step 3: 將結果($v0, $v1..))存到ans</br>
 
 ```
 # step 1
@@ -41,9 +41,9 @@ int main() {
 	a = add_five(a);
 }
 ```
-為了避免重複用同一個記憶體，有以下操作
-step 1: 將會用到的區域變數裡的值先丟到stack
-step 2: 安心使用區域變數
+為了避免重複用同一個記憶體，有以下操作</br>
+step 1: 將會用到的區域變數裡的值先丟到stack</br>
+step 2: 安心使用區域變數</br>
 step 3: function結束把stack吐出來，還原到原先狀態
 ```
 leaf_example:
