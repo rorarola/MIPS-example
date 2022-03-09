@@ -1,6 +1,4 @@
 ## example 1: `g = h + A[8];`
-```
-
 in MIPS:
 assume 	g in $s1
 		h in $s2
