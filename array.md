@@ -11,10 +11,10 @@ add $s1, $s2, $t0
 > offset must be a constant
 
 ## example 2: `g = h + A[i];`
-g in $s1
-h in $s2
-base address of A in $s3
-i in $s4
+- g in $s1
+- h in $s2
+- base address of A in $s3
+- i in $s4
 不能直接用變數當offset`$s4($s3)`，因此有以下方法：
 ```
 add $t0, $s4, $zero	# $t0 = $s4  
