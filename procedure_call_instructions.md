@@ -34,17 +34,17 @@ int leaf_example(int g, int h, int i, int j){
 $s0用來儲存區域變數，呼叫函式的地方(例如main)，還有function裡都會用到。
 ```
 int add_five(int n) {		
-	int b = n + 5;					<-- local variable
+	int b = n + 5;		<-- local variable
 }
 int main() {
-	int a = 10;						<-- local variable
+	int a = 10;		<-- local variable
 	a = add_five(a);
 }
 ```
 為了避免重複用同一個記憶體，有以下操作</br>
 step 1: 將會用到的區域變數裡的值先丟到stack</br>
 step 2: 安心使用區域變數</br>
-step 3: function結束把stack吐出來，還原到原先狀態
+step 3: function結束把stack裡的東西吐出來，還原到原先狀態
 ```
 leaf_example:
 	# step 1
@@ -68,5 +68,7 @@ leaf_example:
 	# end of functoin, jump back to main
 	jr   $ra			
 ```
+> stack是往下長的
+> $sp用來做stack
 
 
