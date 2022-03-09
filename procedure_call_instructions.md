@@ -68,7 +68,7 @@ leaf_example:
 	# end of functoin, jump back to main
 	jr   $ra			
 ```
-> stack是往下長的
+> stack是往下長的</br>
 > $sp用來做stack
 
 
